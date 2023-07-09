@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-4xl text-center my-20">lets get some <span class="text-violet-400 font-semibold ">moooney</span>!!!
+    </h1>
+    <section class="grid grid-cols-3 w-9/12 mx-auto gap-x-4">
+        <div class="bg-red-400 py-8 px-5 rounded-lg">
+            <p class="mb-3 text-white text-xl">
+                Deposit
+            </p>
+            <h1 class="text-white text-4xl">
+                $<span id="deposit">00</span>
+            </h1>
+        </div>
+        <div class="bg-violet-400 py-8 px-5 rounded-lg">
+            <p class="mb-3 text-white text-xl">
+                Withdraw
+            </p>
+            <h1 class="text-white text-4xl">
+                $<span id="withdraw">00</span>
+            </h1>
+        </div>
+        <div class="bg-yellow-400 py-8 px-5 rounded-lg">
+            <p class="mb-3 text-white text-xl">
+                Balance
+            </p>
+            <h1 class="text-white text-4xl">
+                $<span id="balance">1200</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-2 mt-10 w-9/12 mx-auto gap-x-4">
+        <div class="bg-violet-400 py-8 px-5 rounded-lg">
+            <p class="mb-3 text-white text-2xl font-semibold">
+                Please deposit
+            </p>
+            <input id="deposit-field" class="block mb-3 rounded p-3 w-9/12" placeholder="$ deposit amount" type="text">
+            <button id="btn-deposit" class="bg-pink-600 font-semibold rounded-lg px-5 py-3 text-white">Deposit</button>
+        </div>
+        <div class="bg-green-400 py-8 px-5 rounded-lg">
+            <p class="mb-3 text-white text-2xl font-semibold">
+                Please withdraw
+            </p>
+            <input id="withdraw-field" class="block mb-3 rounded p-3 w-9/12" placeholder="$ withdraw amount" type="text">
+            <button id="btn-withdraw" class="bg-pink-600 font-semibold rounded-lg px-5 py-3 text-white">Withdraw</button>
+        </div>
+    </section>
+
+
+    <!-- js link  -->
+    <script src="script.js"></script>
+</body>
+</html>
